@@ -9,6 +9,3 @@ if f - d == 0:
 else:
     result = (a * b - c) / (f - d)
     print("Результат:", result)
-
-
-

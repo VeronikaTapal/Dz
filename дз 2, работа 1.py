@@ -5,7 +5,3 @@ while True:
         break
     elements.append(user_input)
 print("Итоговый список:", elements)
-
-
-
-

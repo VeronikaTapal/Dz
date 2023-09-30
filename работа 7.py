@@ -8,6 +8,3 @@ for i in range(x, y+1):
         sum += i
 
 print("Сумма чисел кратных 5-ти:", sum)
-
-
-

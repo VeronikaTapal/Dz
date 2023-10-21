@@ -9,5 +9,3 @@ class TestFactorial(unittest.TestCase):
         self.assertEqual(factorial(5), 120)
         self.assertEqual(factorial(10), 3628800)
         self.assertEqual(factorial(3), 6)
-
-

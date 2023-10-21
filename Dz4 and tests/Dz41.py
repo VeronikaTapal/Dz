@@ -8,4 +8,3 @@ elements = input("Введите элементы списка через про
 k = int(input("Введите число k: "))
 result = rotate_list(elements, k)
 print(result)
-

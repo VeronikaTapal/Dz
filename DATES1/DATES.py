@@ -1,19 +1,17 @@
 class Date:
-    def __init__(self):
+    def init(self):
         self.input_date()
+        self.validate_date()
         self.print_date()
 
     def validate_date(self):
         if self.day > self.days_in_month():
             raise ValueError("Некорректное количество дней в месяце")
 
-
     def input_date(self):
         self.year = int(input("Введите год: "))
         self.month = int(input("Введите месяц (число): "))
         self.day = int(input("Введите день: "))
-        if self.day > self.days_in_month():
-            raise ValueError("Некорректное количество дней в месяце")
 
     def is_leap_year(self):
         if (self.year % 4 == 0 and self.year % 100 != 0) or self.year % 400 == 0:

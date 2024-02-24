@@ -1,8 +1,12 @@
 class Date:
-    def __init__(self, year, month, day):
-        self.year = year
-        self.month = month
-        self.day = day
+    def __init__(self):
+        self.input_date()
+        self.print_date()
+
+    def validate_date(self):
+        if self.day > self.days_in_month():
+            raise ValueError("Некорректное количество дней в месяце")
+
 
     def input_date(self):
         self.year = int(input("Введите год: "))
@@ -49,9 +53,4 @@ class Date:
         else:
             print("Некорректное значение месяца")
 
-date = Date(0, 0, 0)
-try:
-    date.input_date()
-    date.print_date()
-except ValueError as e:
-    print(f"Ошибка: {e}")
+Date()

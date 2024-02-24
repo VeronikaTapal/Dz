@@ -21,3 +21,7 @@ def test_is_leap_year():
 def test_print_date():
     date = Date(2022, 12, 31)
     assert date.print_date() == "31 Декабря 2022"
+
+def test_date_invalid_day():
+    with pytest.raises(ValueError):
+        Date(2022, 1, 32)

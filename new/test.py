@@ -32,7 +32,3 @@ def test_Date_specific_date():
     assert specific_date.day == 1
     assert specific_date.month == 1
     assert specific_date.year == 2000
-
-
-
-

@@ -74,7 +74,7 @@ class Date:
         return Date(new_day, new_month, new_year)
 
 
-class DateStamp:
+class DateStamp(Date):
     def __init__(self, year, month, day):
         self.year = year
         self.month = month
